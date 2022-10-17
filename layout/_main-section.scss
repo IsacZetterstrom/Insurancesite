@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em 1.5em 3em 1.5em;
+    padding: 4em 1.5em 3em 1.5em;
 
 
     h2{
@@ -21,18 +21,21 @@
                 align-items: center;
                 flex-direction: column;
                 height: 100%;
-                width: 80%;
+                width:  85%;
                 border-radius: .5em;
-                margin: 7em 0 0 0;
+                margin: 10em 0 0 0;
                 padding-bottom: 2em;
                 h4{
                     text-align: center;
-                    margin: 1em 0 1em 0;
+                    margin: .4em 0 0em 0;
+                    padding: .5em 0 .5em 0;
                 }
                 p{
 
                     text-align: center;
                     margin: 0 1em 0 1em;
+                    font-size: 1rem;
+                    font-weight: 550;
                 }
                 
                 .container-background{ /* code for the background of the avatars*/
@@ -41,11 +44,12 @@
                     justify-content: center;
                     align-items: flex-end;
                     width: 90%;
-                    height: 90%;
-                    margin-top: -3em;
+                    height: 70%;
+                    margin-top: -5em;
                 }
                 .card-image{ /* Cardimage code and position*/
-                    max-width: 90%;
+                    padding: 1em 0 0 0;
+                    max-width: 80%;
                     max-height: 90%;
                     bottom: 0;
                 }
@@ -78,11 +82,10 @@
         padding-bottom: 2em;
     }
 }
-
+/* LARGE SCREENS */
 @media screen and (min-width: 768px){
     .container-info{
         padding: 5em;
-        height: 50em;
         .maininfo-wrapper{
             display: flex;
             justify-content: space-between;
@@ -98,10 +101,11 @@
         }
         .card-wrapper{ /* container to wrap the cards */
             display: flex;
+            position: relative;
+            top:10em;
         }
 
     }
-    /* LARGE SCREENS */
     .info-aboutus{
         padding: 20em 30% 7em 30%;
     }

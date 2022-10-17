@@ -4,7 +4,7 @@
 /* CODE FOR HEADER PAGE */
 .header-title{
     background-color: $lightblue-clr;
-    padding: 5em 2em 0 2em;
+    padding: 2em 2em 0 2em;
     h1{
         margin-bottom: .5em;
     }
@@ -41,12 +41,21 @@
     .page-header{
         display: flex;
         .header-title{
+            padding: 8em 0 0 8em;
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
             flex: 1 1 50%;
-            .header-img{
-                flex: 0 1 85%;
+            p{
+                margin: 0 40% 0 0;
             }
+            .header-img-container{
+                justify-content: flex-end;
+
+            }
+            // .header-img{
+            //     flex: 0 1 85%;
+            // }
         }
     }
     .info-wrapper{

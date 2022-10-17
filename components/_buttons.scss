@@ -3,6 +3,7 @@
 .button-style{
     margin: 3em 1em 3em 0em;
     width: 13em;
+    min-width: 9em;
     height: 4em;
     border: none;
     border-radius: 3em;
@@ -25,6 +26,7 @@
     .header-button{
         position:relative;
         bottom: -25%;
+        
     }
     .button-style{
         width: 25%;

@@ -87,9 +87,12 @@
   .page-header {
     padding: 2em 0 0 0;
   }
+  .page-header img {
+    right: 20%;
+  }
   .page-header h1 {
     margin: 0 auto;
-    padding-left: 3em;
+    padding: 0 3.3em 0 6em;
   }
 }
 .page-nav {
@@ -203,6 +206,7 @@
 .button-style {
   margin: 3em 1em 3em 0em;
   width: 13em;
+  min-width: 9em;
   height: 4em;
   border: none;
   border-radius: 3em;
@@ -260,9 +264,4 @@ body p {
   color: rgb(73, 73, 73);
 }
 
-/* LARGE SCREENS */
-@media screen and (min-width: 768px) {
-  .main-contact-container {
-    padding: 0 7em 0 7em;
-  }
-}/*# sourceMappingURL=contact.css.map */
+/* LARGE SCREENS *//*# sourceMappingURL=contact.css.map */
