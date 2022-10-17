@@ -196,6 +196,9 @@
   .page-form h2 {
     padding: 0.5em 0 0 0;
   }
+  .page-form .form-wrapper {
+    width: 50%;
+  }
 }
 .button-style {
   margin: 3em 1em 3em 0em;
@@ -220,6 +223,13 @@
 @media screen and (min-width: 768px) {
   .info-btn {
     display: block;
+  }
+  .header-button {
+    position: relative;
+    bottom: -25%;
+  }
+  .button-style {
+    width: 25%;
   }
 }
 body {

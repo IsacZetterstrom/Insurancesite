@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* #F17949
 #FAB131
 #C7DDEA
@@ -108,30 +107,30 @@
   color: white;
   margin-bottom: 1em;
 }
-.container-info .info-card { /* Container för all kod för ett kort */
+.container-info .info-card { /* contains all cards for wrapping */
   display: flex;
   justify-content: center;
 }
-.container-info .info-card .card-container { /* Kod för hela vita kortet */
+.container-info .info-card .card-container { /* code for the whitecard */
   background-color: white;
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-height: 31em;
+  height: 100%;
   width: 80%;
   border-radius: 0.5em;
   margin: 7em 0 0 0;
+  padding-bottom: 2em;
 }
 .container-info .info-card .card-container h4 {
   text-align: center;
   margin: 1em 0 1em 0;
 }
 .container-info .info-card .card-container p {
-  max-height: 100%;
   text-align: center;
   margin: 0 1em 0 1em;
 }
-.container-info .info-card .card-container .container-background { /* kod för bakgrunden för avatarerna*/
+.container-info .info-card .card-container .container-background { /* code for the background of the avatars*/
   border-radius: 0.5em;
   display: flex;
   justify-content: center;
@@ -140,7 +139,7 @@
   height: 90%;
   margin-top: -3em;
 }
-.container-info .info-card .card-container .card-image {
+.container-info .info-card .card-container .card-image { /* Cardimage code and position*/
   max-width: 90%;
   max-height: 90%;
   bottom: 0;
@@ -158,7 +157,8 @@
 .info-aboutus {
   background-color: #FAB131;
   text-align: center;
-  padding: 4em 3em 3em 3em;
+  height: 35em;
+  padding: 6em 3em 6em 3em;
 }
 .info-aboutus h2 {
   margin-bottom: 1em;
@@ -171,7 +171,7 @@
 @media screen and (min-width: 768px) {
   .container-info {
     padding: 5em;
-    height: 35em;
+    height: 50em;
   }
   .container-info .maininfo-wrapper {
     display: flex;
@@ -187,11 +187,6 @@
   }
   .container-info .card-wrapper { /* container to wrap the cards */
     display: flex;
-  }
-  .container-info .card-wrapper .card-container {
-    min-height: 0;
-    max-height: 500px;
-    min-width: 200px;
   }
   /* LARGE SCREENS */
   .info-aboutus {
@@ -303,6 +298,13 @@
 @media screen and (min-width: 768px) {
   .info-btn {
     display: block;
+  }
+  .header-button {
+    position: relative;
+    bottom: -25%;
+  }
+  .button-style {
+    width: 25%;
   }
 }
 * {

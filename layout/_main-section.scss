@@ -12,29 +12,30 @@
         color: white;
         margin-bottom: 1em;
     }
-        .info-card{ /* Container för all kod för ett kort */
+        .info-card{ /* contains all cards for wrapping */
             display: flex;
             justify-content: center;
-            .card-container{ /* Kod för hela vita kortet */
+            .card-container{ /* code for the whitecard */
                 background-color: white;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                max-height: 31em;
+                height: 100%;
                 width: 80%;
                 border-radius: .5em;
                 margin: 7em 0 0 0;
+                padding-bottom: 2em;
                 h4{
                     text-align: center;
                     margin: 1em 0 1em 0;
                 }
                 p{
-                    max-height: 100%;
+
                     text-align: center;
                     margin: 0 1em 0 1em;
                 }
                 
-                .container-background{ /* kod för bakgrunden för avatarerna*/
+                .container-background{ /* code for the background of the avatars*/
                     border-radius: .5em;
                     display: flex;
                     justify-content: center;
@@ -43,7 +44,7 @@
                     height: 90%;
                     margin-top: -3em;
                 }
-                .card-image{
+                .card-image{ /* Cardimage code and position*/
                     max-width: 90%;
                     max-height: 90%;
                     bottom: 0;
@@ -66,7 +67,8 @@
 .info-aboutus{
     background-color: $yellow-clr;
     text-align: center;
-    padding: 4em 3em 3em 3em;
+    height: 35em;
+    padding: 6em 3em 6em 3em;
     
     h2{
         margin-bottom: 1em;
@@ -80,7 +82,7 @@
 @media screen and (min-width: 768px){
     .container-info{
         padding: 5em;
-        height: 35em;
+        height: 50em;
         .maininfo-wrapper{
             display: flex;
             justify-content: space-between;
@@ -96,12 +98,6 @@
         }
         .card-wrapper{ /* container to wrap the cards */
             display: flex;
-            .card-container{
-                min-height: 0;
-                max-height: 500px;
-                min-width: 200px;
-            }
-
         }
 
     }

@@ -2,6 +2,7 @@
 @use "../layout/Contact-page/contact-footer";
 @use "../layout/Contact-page/contact-header";
 @use "../layout/Contact-page/contact-navbar";
+@use "../components/contact-buttons";
 @use "../layout/Contact-page/contact-form";
 @use "../components/buttons";
 @use "../abstracts/variables" as *;
