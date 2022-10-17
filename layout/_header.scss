@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as *;
+
+
+/* CODE FOR HEADER PAGE */
+.header-title{
+    background-color: $lightblue-clr;
+    padding: 5em 2em 0 2em;
+    h1{
+        margin-bottom: .5em;
+    }
+    p:after{
+        color: white;
+        content: "$0.4 per day";
+    }
+    .header-img{
+        max-width: 85%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+.info-learnmore, .info-jointoday{
+    color: white;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: .9rem;
+    }
+}
+.info-learnmore{
+    background-color: $darkorange-clr;
+}
+.info-jointoday{
+    background-color: $yellow-clr;
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 768px){
+    .page-header{
+        display: flex;
+        .header-title{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 50%;
+            .header-img{
+                flex: 0 1 85%;
+            }
+        }
+    }
+    .info-wrapper{
+        flex: 1 1 50%;
+        .info-learnmore, .info-jointoday{
+            height: 50%;
+        }
+    }
+
+}

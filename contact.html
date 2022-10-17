@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="stylesheet/contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="main-contact-container">
+      <header class="page-header">
+        <h1>Oh hello there!</h1>
+        <img src="assets/man-baby.png" alt="Picture of a man and a baby." />
+      </header>
+      <nav class="page-nav">
+        <a name="form"></a>
+        <!-- länk som tar en tillbaka till "form" när man trycker på knappen "send message"-->
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Our offer</a></li>
+          <li><a href="#">Why us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="page-form">
+        <h2>Whats on your mind?</h2>
+        <div class="form-wrapper">
+          <p>Your e-mail</p>
+          <div class="form-email">
+            <input type="email" required />
+          </div>
+          <p>Your Message</p>
+          <div class="form-textarea">
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Dear Insurance company..."
+              required
+            ></textarea>
+          </div>
+          <div class="btn-container">
+            <button class="button-style contact-btn" type="submit">
+              <a href="#form">SEND MESSAGE</a>
+              <!-- länk som tar en tillbaka till "form" när man trycker på knappen "send message"-->
+            </button>
+          </div>
+        </div>
+      </form>
+      <footer class="page-footer">
+        <section class="footer-img">
+          <img
+            class="img-location"
+            src="assets/swe-maps3.png"
+            alt="map of location"
+          />
+        </section>
+        <aside class="footer-info">
+          <h2>Come visit us!</h2>
+          <p>2219 Griffin Street</p>
+          <p>San Fransisco</p>
+        </aside>
+      </footer>
+    </div>
+  </body>
+</html>

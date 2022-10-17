@@ -1,0 +1,63 @@
+@use "../../abstracts/variables" as *;
+
+.page-form{
+    padding: 1.5em 1em 10em 1em;
+    background-color: $lightgrey-clr;
+    color: white;
+    h2{
+        padding: 0 0 0 1rem;
+    }
+    p{
+        padding: 2em 0 .3rem 1rem;
+        color: $superlightgrey-clr;
+        font-weight: 700;
+    }
+
+
+    .form-email{
+        text-align: center;
+        input{
+            border:none;
+            font-size: 1.4rem;
+            padding: .4rem 1rem;
+            width: 90%;
+            border-radius: .2em;
+        }
+    }
+
+
+    .form-textarea{
+        text-align: center;
+        textarea{
+
+            padding: 1rem;
+            border:none;
+            width: 90%;
+            max-height: 10em;
+            font-weight: 530;
+            border-radius: .2em;
+            font-size: 1.2rem;
+        }
+        textarea::placeholder{
+            color: black;
+        }
+    }
+}
+/* LARGE SCREENS */
+@media screen and (min-width: 768px){
+   
+    .page-form{
+        display: flex;
+        justify-content: space-around;
+        padding: 5em 6em 3em 6em;
+        p{
+            padding: 0;
+            margin: 1em 0 .5em 0;
+        }
+        h2{
+            padding: .5em 0 0 0;
+        }
+    
+    }
+
+}

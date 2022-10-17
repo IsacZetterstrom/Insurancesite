@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as *;
+
+.page-nav{
+    display: flex;
+    justify-content: center;
+    .nav-list{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            height: 50%;
+            width: 50%;
+            a{
+                padding: 1.5em 3em;
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                color: $lightgrey-clr;
+                font-weight: 700;
+                font-size: 1.2rem;
+                font-family: 'Fira Sans', sans-serif;
+            }
+            a:active{
+                background-color: rgb(230, 230, 230);
+                color: rgb(46, 46, 46);
+            }
+        }
+    }
+}
+/* LARGE SCREENS */
+@media screen and (min-width: 768px){
+    .page-nav{
+        display: block;
+        .nav-list{
+            li{
+                width: 25%;
+                display: inline;
+            }
+        }
+    }
+
+
+}

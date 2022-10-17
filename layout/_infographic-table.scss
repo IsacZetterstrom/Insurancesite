@@ -1,0 +1,70 @@
+@use "../abstracts/variables" as *;
+
+.infographic-table{
+
+    .table{
+        position: relative;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.6rem;
+        padding: 0 3em 0 3em;
+        height: 250px;
+    }
+
+    .table-howitworks{
+        background-color: $lightblue-clr;
+        font-size: 2.5rem;
+    }
+     .table-1::before, .table-2::before, .table-3::before,
+     .table-4::before, .table-5::before{
+         position: absolute;
+         top: .5em;
+         left: .5em;
+         font-size: 2.5rem;
+         color: rgb(153, 153, 153);
+         font-weight: 700;
+    }
+    .table-1::before{
+        content: "01";
+        
+    }
+    .table-2::before{
+        content: "02";
+    }
+    .table-2{
+        background-color: $superlightgrey-clr;
+    }
+    .table-3::before{
+        content: "03";
+    }
+
+    .table-4{
+        background-color: $darkorange-clr;
+        p{
+            color: rgb(54, 54, 54);
+        }
+    }
+    .table-4::before{
+        content: "04";
+        color: rgb(50.300.130.0);
+        opacity: 50%;
+
+    }
+    .table-5::before{
+        content: "05";
+    }
+}
+/* LARGE SCREENS */
+@media screen and (min-width: 768px){
+    .infographic-table{
+        display: flex;
+        flex-wrap: wrap;
+        .table{
+            font-size: 1.1rem;
+            padding: 0;
+            flex: 1 1 33.333333%;            
+        }
+    }
+}
