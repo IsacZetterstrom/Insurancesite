@@ -1,7 +1,32 @@
 /* #F17949
 #FAB131
 #C7DDEA
-#A9A19E*/ /* CODE FOR HEADER PAGE */
+#A9A19E*/
+body h1 {
+  font-size: 3rem;
+  font-weight: 1000;
+  font-family: "Frank Ruhl Libre", serif;
+}
+body h2 {
+  font-size: 2.9rem;
+  font-weight: 700;
+}
+body h3 {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+body h4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+body p {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: rgb(73, 73, 73);
+}
+
+/* CODE FOR HEADER PAGE */
 .header-title {
   background-color: #C7DDEA;
   padding: 2em 2em 0 2em;
@@ -326,36 +351,9 @@
     width: 25%;
   }
 }
-* {
-  font-family: "Frank Ruhl Libre", serif;
-}
-
 body {
   width: 100%;
   height: 100vh;
-}
-body h1 {
-  font-size: 3rem;
-  font-weight: 1000;
-  font-family: "Frank Ruhl Libre", serif;
-}
-body h2 {
-  font-size: 2.9rem;
-  font-weight: 700;
-}
-body h3 {
-  font-size: 2.7rem;
-  font-weight: 700;
-}
-body h4 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-body p {
-  font-family: "Fira Sans", sans-serif;
-  line-height: 1.5em;
-  font-weight: 600;
-  color: rgb(73, 73, 73);
 }
 
 /* LARGE SCREENS */
