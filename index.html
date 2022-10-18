@@ -18,22 +18,43 @@
       href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;900&display=swap"
       rel="stylesheet"
     />
+    <meta
+      name="keywords"
+      content="financial, safety, insurance, agency, online, personal, organization"
+    />
+    <meta
+      name="description"
+      content="Together we keep each other safe at home or at work. Your personal financial safety net online. lorem"
+    />
+
     <title>We've got you covered! - Insurance</title>
   </head>
   <body>
     <div class="main-container">
       <a name="top"></a>
       <header class="page-header">
-        <section class="header-title">
-          <h1>We've got you Covered.</h1>
-          <p>
+        <section
+          class="header-title"
+          itemscope
+          itemtype="https://schema.org/Product"
+        >
+          <h1 itemprop="slogan">We've got you Covered.</h1>
+          <p itemprop="price">
             Together we keep each other safe at home or at work. By paying a
             tiny fee a day, you are fully insured all day long. You get it all
             for as little as
           </p>
-          <button class="button-style jointoday header-button">JOIN NOW</button>
-          <div class="header-img-container">
+
+          <div
+            class="header-img-container"
+            itemscope
+            itemtype="http://schema.org/ImageObject"
+          >
+            <button class="button-style jointoday header-button">
+              JOIN NOW
+            </button>
             <img
+              itemprop="image"
               class="header-img"
               src="assets/family.png"
               alt="Picture of a family."
@@ -61,13 +82,17 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <main class="container-info">
+      <main
+        class="container-info"
+        itemscope
+        itemtype="https://schema.org/Offer"
+      >
         <div class="maininfo-wrapper">
           <section class="info-description">
             <h2>Your personal financial safety net online.</h2>
             <button class="button-style jointoday info-btn">JOIN NOW</button>
           </section>
-          <p>
+          <p itemprop="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor
             ligula vel felis cursus egestas. Etiam consectetur finibus
             facilisis. Proin accumsan auctor purus, quis finibus tellus accumsan
@@ -90,13 +115,14 @@
                 <!--kod för bakgrunden för avatarerna-->
 
                 <img
+                  itemprop="image"
                   class="card-image"
                   src="assets/child.png"
                   alt="Picture of a child."
                 />
               </div>
               <h4>Children</h4>
-              <p>
+              <p itemprop="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 tempor ligula vel felis cursus egestas. Etiam consectetur
                 finibus facilisis. Proin accumsan auctor purus, quis finibus
@@ -104,17 +130,18 @@
               </p>
             </article>
           </div>
-          <div class="info-card">
+          <div class="info-card" itemprop="offers">
             <article class="card-container">
               <div class="container-background adult-card">
                 <img
+                  itemprop="image"
                   class="card-image"
                   src="assets/adult.png"
-                  alt="Picture of a child."
+                  alt="Picture of an adult."
                 />
               </div>
               <h4>Just right</h4>
-              <p>
+              <p itemprop="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 tempor ligula vel felis cursus egestas. Etiam consectetur
                 finibus facilisis. Proin accumsan auctor purus, quis finibus
@@ -122,17 +149,18 @@
               </p>
             </article>
           </div>
-          <div class="info-card">
+          <div class="info-card" itemprop="offers">
             <article class="card-container">
               <div class="container-background old-card">
                 <img
+                  itemprop="image"
                   class="card-image"
                   src="assets/old.png"
-                  alt="Picture of a child."
+                  alt="Picture of a old man."
                 />
               </div>
               <h4>Old fart</h4>
-              <p>
+              <p itemprop="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 tempor ligula vel felis cursus egestas. Etiam consectetur
                 finibus facilisis. Proin accumsan auctor purus, quis finibus
@@ -142,7 +170,12 @@
           </div>
         </div>
       </main>
-      <section class="info-aboutus">
+      <section
+        class="info-aboutus"
+        itemprop="description"
+        itemscope
+        itemtype="https://schema.org/Offer"
+      >
         <h2>About us</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
@@ -159,25 +192,32 @@
           amet dignissim orci lorem vel felis. Ut tempus dignissim.
         </p>
       </section>
-      <div class="infographic-table">
+      <div
+        class="infographic-table"
+        itemprop="step"
+        itemscope
+        itemtype="https://schema.org/HowToSection"
+      >
         <aside class="table table-howitworks">
           <h2>How it works?</h2>
         </aside>
-        <aside class="table table-1">
-          <p>Answer a few questions about yourself.</p>
+        <aside class="table table-1" itemprop="position" content="1">
+          <p itemprop="text">Answer a few questions about yourself.</p>
         </aside>
-        <aside class="table table-2">
-          <p>Choose a plan.</p>
-          <p>Get a quote.</p>
+        <aside class="table table-2" itemprop="position" content="2">
+          <p itemprop="text">Choose a plan.</p>
+          <p itemprop="text">Get a quote.</p>
         </aside>
-        <aside class="table table-3">
-          <p>Answer some questions about your medical history.</p>
+        <aside class="table table-3" itemprop="position" content="3">
+          <p itemprop="text">
+            Answer some questions about your medical history.
+          </p>
         </aside>
-        <aside class="table table-4">
-          <p>Wait 90 sec to get approved.</p>
+        <aside class="table table-4" itemprop="position" content="4">
+          <p itemprop="text">Wait 90 sec to get approved.</p>
         </aside>
-        <aside class="table table-5">
-          <p>Done!</p>
+        <aside class="table table-5" itemprop="position" content="5">
+          <p itemprop="text">Done!</p>
         </aside>
       </div>
       <footer class="page-footer">

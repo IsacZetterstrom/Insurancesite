@@ -12,13 +12,18 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="stylesheet/contact.css" />
+
     <title>Contact</title>
   </head>
   <body>
     <div class="main-contact-container">
       <header class="page-header">
         <h1>Oh hello there!</h1>
-        <img src="assets/man-baby.png" alt="Picture of a man and a baby." />
+        <img
+          itemprop="image"
+          src="assets/man-baby.png"
+          alt="Picture of a man and a baby."
+        />
       </header>
       <nav class="page-nav">
         <a name="form"></a>
@@ -62,10 +67,15 @@
             alt="map of location"
           />
         </section>
-        <aside class="footer-info">
+        <aside
+          class="footer-info"
+          itemprop="address"
+          itemscope
+          itemtype="https://schema.org/PostalAddress"
+        >
           <h2>Come visit us!</h2>
-          <p>2219 Griffin Street</p>
-          <p>San Fransisco</p>
+          <p itemprop="streetAddress">2219 Griffin Street</p>
+          <p itemprop="addressLocality">San Fransisco</p>
         </aside>
       </footer>
     </div>
