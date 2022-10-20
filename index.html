@@ -25,14 +25,16 @@
     />
     <meta
       name="description"
-      content="Together we keep each other safe at home or at work. Your personal financial safety net online. lorem"
+      content="Together we keep each other safe at home or at work. Your personal financial safety net online."
     />
 
     <title>We've got you covered! - Insurance</title>
   </head>
   <body>
     <div class="main-container">
+      <!-- Tag for the top of the page. -->
       <a name="top"></a>
+      <!-- HTML for header -->
       <header class="page-header">
         <section
           class="header-title"
@@ -51,7 +53,7 @@
             itemscope
             itemtype="http://schema.org/ImageObject"
           >
-            <button class="button-style jointoday header-button">
+            <button class="button-style jointodays header-button">
               JOIN NOW
             </button>
             <img
@@ -64,17 +66,16 @@
         </section>
         <div class="info-wrapper">
           <section class="info-learnmore">
-            <!-- LÄNKA DETTA TILL MER INFO PÅ SIDAN -->
             <p>what do we have to offer?</p>
-            <h3>Learn more</h3>
+            <a href="#Learnmore-tag"><h3>Learn more</h3></a>
           </section>
           <section class="info-jointoday">
-            <!-- LÄNKA DETTA TILL KONTAKTFORMULÄRET -->
             <p>What are you waiting for?</p>
-            <h3>Join today</h3>
+            <a href=""><h3>Join today</h3></a>
           </section>
         </div>
       </header>
+      <!-- HTML for NAV -->
       <nav class="page-nav">
         <ul class="nav-list">
           <li><a href="#">Home</a></li>
@@ -83,6 +84,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <!-- HTML for mid-section ("The Grey area") -->
       <main
         class="container-info"
         itemscope
@@ -90,6 +92,7 @@
       >
         <div class="maininfo-wrapper">
           <section class="info-description">
+            <a name="Learnmore-tag"></a>
             <h2>Your personal financial safety net online.</h2>
             <button class="button-style jointoday info-btn">JOIN NOW</button>
           </section>
@@ -102,19 +105,15 @@
             hendrerit ullamcorper ex quis congue donec vel finibus libero.
           </p>
         </div>
-
+        <!-- HTML for Cards. (Note, only first card is commented) -->
+        <!-- wrapcontainer for the cards-->
         <div class="card-wrapper">
-          <!--Container för alla kort, används för wrap-->
-
+          <!--container for every individual card-->
           <div class="info-card">
-            <!--Container för all kod för ett kort-->
-
+            <!-- container for the white-card-->
             <article class="card-container">
-              <!--Container för hela vita kortet-->
-
+              <!-- container for the background of the avatar (avatars inside)-->
               <div class="container-background child-card">
-                <!--kod för bakgrunden för avatarerna-->
-
                 <img
                   itemprop="image"
                   class="card-image"
@@ -171,6 +170,7 @@
           </div>
         </div>
       </main>
+      <!-- HTML for about us "Orange area" -->
       <section
         class="info-aboutus"
         itemprop="description"
@@ -193,6 +193,7 @@
           amet dignissim orci lorem vel felis. Ut tempus dignissim.
         </p>
       </section>
+      <!-- HTML for all columns at the end -->
       <div
         class="infographic-table"
         itemprop="step"
@@ -222,6 +223,7 @@
         </aside>
       </div>
       <footer class="page-footer">
+        <!-- Link which takes you to the top of the page -->
         <a href="#top"
           ><p class="up-triangle">&#708;</p>
           Take me up again!</a

@@ -1,8 +1,9 @@
 @use "../abstracts/variables" as *;
 
 
-/* CODE FOR HEADER PAGE */
+/* Code for left column in header */
 .header-title{
+
     background-color: $lightblue-clr;
     padding: 2em 2em 0 2em;
     h1{
@@ -18,51 +19,69 @@
         margin: 0 auto;
     }
 }
+
+/* Code for right columns in header */
 .info-learnmore, .info-jointoday{
-    color: white;
+
     display: flex;
-    height: 400px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 400px;
+    color: white;
     p{
         font-size: .9rem;
     }
 }
 .info-learnmore{
+
     background-color: $darkorange-clr;
 }
 .info-jointoday{
+
     background-color: $yellow-clr;
 }
 
 /* LARGE SCREENS */
 @media screen and (min-width: 768px){
+
+    /* Code for left column in header */
     .page-header{
+
         display: flex;
+
         .header-title{
-            padding: 8em 0 0 8em;
+
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             flex: 1 1 50%;
+            padding: 4em 0 0 4em;
             p{
                 margin: 0 40% 0 0;
             }
             .header-img-container{
-                justify-content: flex-end;
 
+                justify-content: flex-end;
             }
-            // .header-img{
-            //     flex: 0 1 85%;
-            // }
         }
     }
-    .info-wrapper{
+
+    .info-wrapper{ /* Wraps the right columns in header*/
         flex: 1 1 50%;
+
+        /* Code for right columns in header */
         .info-learnmore, .info-jointoday{
+
             height: 50%;
+          a{
+            transition: 0.8s;
+          }
+          a:hover{
+            scale: 150%;
+            transition: 0.8s;
+          }
         }
-    }
+    }            
 
 }

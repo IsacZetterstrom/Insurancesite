@@ -2,6 +2,7 @@
 @use "../layout/Contact-page/contact-footer";
 @use "../layout/Contact-page/contact-header";
 @use "../layout/Contact-page/contact-navbar";
+@use "../layout/navbar";
 @use "../components/contact-buttons";
 @use "../layout/Contact-page/contact-form";
 @use "../components/buttons";
@@ -14,7 +15,8 @@ body{
 /* LARGE SCREENS */
 @media screen and (min-width: 768px){
      .main-contact-container{
-         padding: 0 7em 0 7em;
+        padding: 0 10% 0 10%;
+        min-width: 800px;
      }
 }
 

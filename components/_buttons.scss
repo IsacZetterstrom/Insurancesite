@@ -1,34 +1,50 @@
 @use "../abstracts/variables" as *;
 
+
+/* code for all buttons */
 .button-style{
     margin: 3em 1em 3em 0em;
     width: 13em;
-    min-width: 9em;
     height: 4em;
     border: none;
     border-radius: 3em;
     box-shadow: 0 2px 2px rgb(184, 183, 183);
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
+    transition: .8s;
 }
+.button-style:active{
+    opacity: 80%;
+    box-shadow: 0 0 10px thistle;
+}
+
+/* De-activates the second "join-now" button in mobile-form*/
+
 .info-btn{
     display: none;
 }
-.btn-container{
-    display: flex;
-    justify-content: flex-end;
-}
+
+
 
 @media screen and (min-width: 768px){
     .info-btn{
         display: block;
     }
-    .header-button{
-        position:relative;
-        bottom: -25%;
-        
+
+    /* Code for Button on header (front page)*/
+    .header-img-container{
+        position: relative;
+        .header-button{
+            position: absolute;
+            left: 0em;
+            bottom: 60%;
+            max-width: 28%;
+        }
     }
-    .button-style{
-        width: 25%;
+    /* code for all buttons */
+    .button-style:hover{
+        transition: .8s;
+        filter: brightness(90%);
+        cursor: pointer;
     }
 }

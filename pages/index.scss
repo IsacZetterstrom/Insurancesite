@@ -13,7 +13,8 @@ body{
 /* LARGE SCREENS */
 @media screen and (min-width: 768px){
      .main-container{
-         padding: 0 7em 0 7em;
+         padding: 0 20% 0 20%;
+         min-width: 800px;
      }
 }
 

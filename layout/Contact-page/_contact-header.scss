@@ -1,12 +1,13 @@
 @use "../../abstracts/variables" as *;
 
+/* Code for header in contact-page */
 .page-header{
-    background-color: $lightblue-clr;
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.5em .3em 0 .3em;
-
+    background-color: $lightblue-clr;
     h1{
         position: relative;
         left: .8em;
@@ -20,14 +21,19 @@
 }
 /* LARGE SCREENS */
 @media screen and (min-width: 768px){
+    
+    /* Code for header in contact-page */
     .page-header{
+
         padding: 2em 0 0 0;
         img{
+
             right: 20%;
         }
         h1{
-            margin: 0 auto;
+
             padding: 0 3.3em 0 6em;
+            margin: 0 auto;
         }
         
     }

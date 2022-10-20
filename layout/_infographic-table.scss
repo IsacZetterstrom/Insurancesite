@@ -1,31 +1,41 @@
 @use "../abstracts/variables" as *;
 
-.infographic-table{
 
+.infographic-table{ /* Wrapper for columns at bottom */
+    
+    /* general code for all columns */ 
     .table{
+
         position: relative;
         display: flex;
         text-align: center;
         flex-direction: column;
         justify-content: center;
-        font-size: 1.6rem;
         padding: 0 3em 0 3em;
         height: 250px;
+        font-size: 1.6rem;
     }
-
+    
+    /* Code for the first column */
     .table-howitworks{
+
         background-color: $lightblue-clr;
         font-size: 2.5rem;
     }
+
+    /* Sets the position and variables for the number in the upper-left corner */
      .table-1::before, .table-2::before, .table-3::before,
      .table-4::before, .table-5::before{
+
          position: absolute;
          top: .5em;
          left: .5em;
          font-size: 2.5rem;
-         color: rgb(153, 153, 153);
          font-weight: 700;
+         color: rgb(153, 153, 153);
     }
+
+    /* individual code for every column */
     .table-1::before{
         content: "01";
         
@@ -39,7 +49,6 @@
     .table-3::before{
         content: "03";
     }
-
     .table-4{
         background-color: $darkorange-clr;
         p{
@@ -58,13 +67,20 @@
 }
 /* LARGE SCREENS */
 @media screen and (min-width: 768px){
-    .infographic-table{
+
+    .infographic-table{ /* wrapper for the columns */
+
         display: flex;
         flex-wrap: wrap;
-        .table{
-            font-size: 1.1rem;
+        
+        /* general code for all columns */
+        .table{ 
+
             padding: 0;
-            flex: 1 1 33.333333%;            
+            flex: 0 0 33.333333%;    
+            p{
+                margin: 0 2em 0 2em;
+            }    
         }
     }
 }

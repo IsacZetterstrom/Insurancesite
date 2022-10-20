@@ -1,1 +1,11 @@
 @use "../abstracts/variables" as *;
+
+/* Code for button on contact-page*/
+
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+    a{
+        color: black;
+    }
+}

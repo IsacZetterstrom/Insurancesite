@@ -1,7 +1,5 @@
-/* #F17949
-#FAB131
-#C7DDEA
-#A9A19E*/
+
+/* Pre-made variables */
 
 $lightblue-clr:#C7DDEA;
 $darkorange-clr:#F17949;
@@ -9,14 +7,18 @@ $yellow-clr: #FAB131;
 $lightgrey-clr:#A9A19E;
 $darkgrey-clr:rgb(204, 204, 204);
 $superlightgrey-clr:rgb(223, 223, 223);
+
 body{
+
+    /* default values for fonts et.c*/
+
     h1{
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 1000;
         font-family: 'Frank Ruhl Libre', serif;
     }
     h2{
-        font-size: 2.9rem;
+        font-size: 3.1rem;
         font-weight: 700;
     }
     h3{
@@ -33,6 +35,16 @@ body{
         font-weight: 600;
         color: rgb(73, 73, 73);
     }
+    a{
+        text-decoration: none;
+        color: white;
+        transition: .8s;
+    }
 
 }
 
+@media screen and(min-width:768px){
+    p{
+        font-size: 1.5rem; 
+    }
+}
