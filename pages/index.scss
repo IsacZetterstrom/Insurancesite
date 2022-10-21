@@ -16,5 +16,11 @@ body{
          padding: 0 20% 0 20%;
          min-width: 800px;
      }
+     @media screen and (min-width: 2000px){
+        .main-container{
+            padding: 0 25% 0 25%;
+            min-width: 800px;
+        }
+    }
 }
 

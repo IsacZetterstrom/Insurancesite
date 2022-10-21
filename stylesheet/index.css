@@ -116,11 +116,12 @@ body a {
   justify-content: center;
 }
 .page-nav .nav-list li {
-  padding: 2em 0 2em 0;
   width: 50%;
   text-align: center;
 }
 .page-nav .nav-list li a {
+  padding: 1.5em 0 1.5em 0;
+  display: block;
   white-space: nowrap;
   text-decoration: none;
   font-weight: 700;
@@ -328,6 +329,7 @@ body a {
   .infographic-table .table {
     padding: 0;
     flex: 0 0 33.333333%;
+    height: 350px;
   }
   .infographic-table .table p {
     margin: 0 2em 0 2em;
@@ -406,6 +408,12 @@ body {
 @media screen and (min-width: 768px) {
   .main-container {
     padding: 0 20% 0 20%;
+    min-width: 800px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 2000px) {
+  .main-container {
+    padding: 0 25% 0 25%;
     min-width: 800px;
   }
 }/*# sourceMappingURL=index.css.map */
